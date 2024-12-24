@@ -1,0 +1,227 @@
+---
+title: "Day 1"
+format: html
+editor: visual
+embed-resources: true
+---
+
+## Welcome to STAT 705!
+
+-   [About me](https://rmshksu.github.io)
+
+-   About you
+
+## About this course
+
+### Admin Stuff
+
+- Website
+- Office Hours and Help Lab
+- Syllabus story time
+- "Extra" Math help course
+
+### Philosophy
+
+- Personal Education
+- Gen Eds
+- Pedagogy
+- Grades
+
+### Goals
+
+- Statistical Literacy
+- Basic Analysis
+- (Hopefully) Probabilistic Thinking
+
+<br>
+
+**Questions?**
+
+<br>
+
+## Basic Ideas of Statistics
+
+**Goals For Today:**
+
+>Develop a definition of the science of Statistics
+>Define and describe populations versus samples
+>Define fundamental sampling techniques
+
+<br>
+
+### Statistics as a Science
+
+**How many undergraduates are in this room?**
+
+<br>
+
+**How many undergraduates are at K-State?**
+
+<br>
+
+**How many undergraduates are there in America? The world?**
+
+<br>
+
+I want to understand the average caloric intake of undergraduate students in the US. 
+
+But I live in Kansas, not the entirety of the US.
+
+How can I find the answer to my question (assuming we don't know the answer already)?
+
+<br>
+
+<br>
+
+I resolve to take my research question:
+
+>What is the average caloric intake of undergraduate students in the US?
+
+And hand it over to a 5 different Universities across the US:
+
+- Kansas State University
+- UC Davis
+- (The) Ohio State University
+- UCONN (University of Conneticuit)
+- Texas A&M
+
+I tell them to select $200$ students at random and determine their caloric intake.
+
+All in all, I end up with $1000$ students representing the totality of American Undergraduates.
+
+<br>
+
+What have I done? I've taken a **sample** from my **population.**
+
+- **Population:** the *entire collection* of individuals about which information is sought.
+
+- **Sample:** a *subset* of population, containing the individuals that are actually observed.
+
+<br>
+
+I calculate an average from my sample, and I end up finding out *some value* that I use to infer the caloric intake for undergraduates across the entire US.
+
+What have I done? I've made *inference* about a *population* from a *sample*; I've done **Statistics.**
+
+**Statistics:** is the study of procedures for collecting, describing, and drawing conclusions from information.
+
+>Plainly, the act of describing or making inferences about a population, from a sample
+
+<br>
+
+### Parameters and Statistics
+
+***Let's look at a different example***
+
+Raccoons get rabies, more than normal for most mammals. The Kansas Department of Wildlife & Parks decides to investigate how prevalent rabies is in the state.
+
+KDWP estimates there are roughly $3.3$ million raccoons in Kansas. They capture $10000$ raccoons across the state and test them for rabies. They find 382 raccoons that test positive for rabies, with the rest being negative. 
+
+- In this study, what is considered the population?
+
+- What is the sample?
+
+- What does the study tell us about raccoons and rabies in Kansas?
+
+<br>
+
+In our study, we had a distinct population and sample, with a distinct quantity for each. This number can be very useful, but is generally *insufficiently informative*.
+
+The Center for Disease Control (CDC) estimates roughly $10$-$14\%$ of raccoons carry *Rabies lyssavirus*. From KDWP's study, they found that $3.82\%$ of the raccoons in their sample had rabies, and extrpolated that to the entire population.
+
+$${382\over 10000}=0.0382 \times 100 = 3.82\%$$
+
+What we now have are two values that **describe** our population and our sample.
+
+- **Parameter:** a number that describes an entire population.
+
+- **Statistic:** a number that describes a sample.
+
+<br>
+
+- What was our parameter in the above study?
+
+- Our statistic?
+
+<br>
+
+### Sampling Techniques
+
+I want to know how many individuals in the K-State Division of Biology consider Cell Biology to be an enjoyable class. 
+
+I decide to assign every student who's taken the class and declared a major that falls under the Division of Biology's umbrella a number from $1$ to $500$ (let's play some make believe on how many students we're working with here).
+
+I then generate $50$ random numbers from $1$ to $N$, and select those students to participate in my one question survey.
+
+What I've done has resulted in a sample size of $n=50$, where **every individual was equally likely to be selected.** 
+
+$$\text{Probability of being selected first} = {1\over 500}$$
+
+Let's not discuss what happens as each person is selected...
+
+<br>
+
+I've performed a **Simple Random Sample**.
+
+- **Simple Random Sample (SRS):** a sample chosen by a method in which collection of n population items is equally likely to make up the sample.
+
+<br>
+
+Let's say I divide the $500$ students into two groups: Pre-Med and Not-Pre-Med
+
+I end up with a split of $n_1=300$ Pre-Med students and $n_2=200$ Not-Pre-Med students, then I perform my SRS on each group.
+
+This is a **Stratified Sample**.
+
+- **Stratified Sample:** The population is divided into groups, called **strata**, where the members of each *stratum* are similar in some way. Then a SRS is drawn from each stratum.
+
+<br>
+
+Let's go back to our raccoon example:
+
+KDWP samples those raccoons from pre-defined areas, subsections of Kansas, rather than going across the entirety of Kansas in a big fire line and snatching up suspicious racoons. 
+
+Each of those subsections of land are called **clusters**, and the technique we've used here is called **Cluster Sampling**.
+
+**Cluster Sampling:** Items are drawn from the population in groups, or clusters.
+
+<br>
+
+I drive a Honda Fit, which was built on an assembly line, and part of the process of building that car on an assembly line was something called *quality assurance*. 
+
+Considering my car has yet to blow up on me, it seems to have passed the QA check.
+
+Likely because they used a proper sampling technique:
+
+The part of the assembly line that produces the muffler for Honda Fits decides that every day they'll draw a number, $k$, between $3$ and $6$.
+
+Whatever number they draw is now the first muffler that comes off of the line to be checked for defects. Then they'll check the $k^{th}$ item moving forward.
+
+They draw the number $4$. So the $4^{th}$ muffler that comes off of the line will be evaluated for possible defects, then every $4$ mufflers after that will also be checked for defects.
+
+This is called **Systematic Sampling.**
+
+- **Systematic Sampling:** a starting point is chosen randomly and then every $k^{th}$ item in the population is selected.
+
+<br>
+
+<br>
+
+Recall our example with Undergraduate caloric intake:
+
+I instead instruct the $5$ chosen Universities to send the survey to every student's email inbox. They are given the option on whether or not to participate. 
+
+This is naturally called a **Voluntary Response Sample**, due to the participants getting to **choose** whether they are involved or not.
+
+<br>
+
+Let's say I decide to calculate the caloric intake of Undergraduates in the US based off of the students in this classroom.
+
+That's called a **Sample of Convenience**. It was easy, I could finalize it right now, and it'd be fairly incorrect. 
+
+<br>
+
+### Attendance QOTD
+
+### Go away
+
