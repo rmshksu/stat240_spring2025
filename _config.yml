@@ -22,16 +22,14 @@ url: 'https://rmshksu.github.io' # the base hostname & protocol for your site, e
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
 # Theme settings
-remote_theme: just-the-docs/just-the-docs@v0.10.0
+remote_theme: just-the-docs/just-the-docs@v0.9.0
 color_scheme: light
 search_enabled: true
 heading_anchors: true
 permalink: pretty
 aux_links:
-#  Kevin Lin:
-#    - 'https://kevinl.info'
-#  Just the Class on GitHub:
-#    - 'https://github.com/kevinlin1/just-the-class'
+#  Dr. Lacasa:
+#    - 'https://jlacasa.github.io'
 footer_content:
 
 # Collections for website data
