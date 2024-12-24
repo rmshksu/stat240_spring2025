@@ -16,18 +16,107 @@ description: >-
 
 ---
 
-## About
+# About
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Erat nam at lectus urna duis convallis convallis tellus id. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Ultrices vitae auctor eu augue ut lectus arcu. Morbi tristique senectus et netus et malesuada. Turpis tincidunt id aliquet risus feugiat in ante. Consequat interdum varius sit amet mattis vulputate enim nulla. Felis eget nunc lobortis mattis aliquam. Eu non diam phasellus vestibulum lorem sed risus. A condimentum vitae sapien pellentesque habitant morbi tristique. Orci dapibus ultrices in iaculis nunc sed augue lacus viverra. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Dictum varius duis at consectetur lorem donec massa sapien. Blandit cursus risus at ultrices mi tempus imperdiet. Laoreet sit amet cursus sit amet dictum sit amet justo. Felis eget nunc lobortis mattis aliquam faucibus. Nam aliquam sem et tortor consequat.
+This course covers the most fundamental topics in the science of Statistics and Probability. We'll discuss everything from descriptive vocabulary and methods of data visualization, to theoretical statistics and statistical analyses. 
 
-## Lecture
+My primary goal for my students is to increase your *understanding* and *literacy* with the concepts in Statistics to **arm you with knowledge for the real world**. While this class is a foundational and extremely important course for the sciences, it's more important that you capture the information that you would use *every day of your lives*. 
 
-Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Vulputate dignissim suspendisse in est ante in. Massa vitae tortor condimentum lacinia quis vel. Gravida neque convallis a cras semper auctor. Pellentesque eu tincidunt tortor aliquam nulla. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Sit amet purus gravida quis blandit turpis cursus in. Porttitor leo a diam sollicitudin tempor. Vel facilisis volutpat est velit egestas dui id ornare. Cum sociis natoque penatibus et magnis. Tristique magna sit amet purus gravida. Nibh sit amet commodo nulla facilisi nullam vehicula. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Id semper risus in hendrerit gravida. Sit amet justo donec enim diam vulputate ut pharetra sit. Vitae justo eget magna fermentum. Tellus in metus vulputate eu. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Etiam erat velit scelerisque in dictum non consectetur a erat. Pellentesque eu tincidunt tortor aliquam nulla.
+As such ***I hold very high standards for your understanding of interpretations and concepts***, while I hold lower standards on mathematical rigor than most instructors in the field. 
 
-## Resources
+My secondary goal is to ensure that ***if you attend class every day*** you will not have to study more than 2 hours per week outside of class (inclusive of homework time) to succeed in the class. 
 
-Lacus viverra vitae congue eu. Suspendisse in est ante in nibh mauris cursus mattis. Nisl vel pretium lectus quam id leo in. Euismod lacinia at quis risus sed vulputate odio. Non enim praesent elementum facilisis. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Id interdum velit laoreet id donec ultrices tincidunt arcu. Urna molestie at elementum eu facilisis sed odio. Auctor urna nunc id cursus metus aliquam eleifend. Volutpat commodo sed egestas egestas fringilla phasellus. Libero nunc consequat interdum varius sit amet mattis. Imperdiet nulla malesuada pellentesque elit eget gravida cum sociis natoque. Tortor vitae purus faucibus ornare suspendisse. Auctor elit sed vulputate mi.
+**Main Goal of this Course:** 
 
-## Assignments
+To builds students statistical literacy and introduce them to basic statistical analysis.
 
-Vehicula ipsum a arcu cursus vitae congue. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Risus sed vulputate odio ut enim blandit. Aliquam id diam maecenas ultricies mi eget. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Eget mi proin sed libero enim sed faucibus. Sem integer vitae justo eget magna fermentum iaculis. In mollis nunc sed id semper risus in. Sit amet risus nullam eget felis eget. Mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada. Porta non pulvinar neque laoreet suspendisse interdum consectetur libero id. At varius vel pharetra vel turpis nunc eget. Scelerisque purus semper eget duis at tellus.
+The first half of this course will focus on developing a baseline vocabulary for the science of Statistics, a fundamental understanding of statistical/mathematical notation, and performing basic measurement calculations.
+
+The second half of this course will introduce simple concepts of Mathematical and Theoretical Statistics, and guide students through the process of performing the two most fundamental statistical analyses; regression and hypothesis testing.
+
+**Prerequisites:** There are no formal prerequisites for this course, however it is **highly suggested** you have completed a high school algebra course before taking this class. If you lack that prerequisite, or feel incredibly shakey/rusty on those skills, we offer a "catch-up" course to help students understand enough algebra/math to succeed in this class. Details will be included closer to the semester. 
+
+## Weekly schedule
+
+{% for schedule in site.schedules %}
+{{ schedule }}
+{% endfor %}
+
+## Textbook
+
+Elementary Statistics, 4th edition, by Navidi & Monk. Note: An electronic version of the text is included with the access code to ALEKS, the online learning system from McGraw-Hill that is required.
+
+## Grading
+
+The course will be for 3 credits, graded on an A-F scale. A (>90%), B (90%-80%), C (80%-70%), D (70%-60%), and F (<60%). Final grade will be based on the following criteria:
+
+* Exam 1 - 20%
+
+* Exam 2 - 20%
+
+* Homework - 30%
+
+* Final Exam - 30%
+
+* Attendace (Extra Credit) - 5%
+
+### Attendance  
+
+Attendance to lecture and in-class participation are completely optional, but highly recommended. If you're late or need to leave early, you are only asked to be respectful and not be disruptive. I would rather you be in class at all than be class on-time or stay for the full duration. 
+
+### Attendance Credit/Question of the Day
+
+5% of extra credit will be given out for attendance, determined through participation and submission of individual practice problems for each day of class.
+
+These problems are **not graded**, simply counted for participation and assigned the full points. 
+
+These will be scored these as they are submitted, based off of level of understanding. **This is purely for data collection and will never reflect on you negatively or positively.** They simply provide a persistent understanding of the classes competency level, so that instruction can be adjusted as needed.
+
+Periodically, I will take a student's work they submitted for an attendance problem and convert it into digital writing to make it completely anonymous. I may or may not change their work slightly to add to the anonymity. The class will be asked to submit a score and a single piece of feedback on the work the student has done. That will count as your attendance for the **entire week**. 
+
+After **every 2 chapters** in our course schedule are completed, I will release a set of practice problems that can be used as a "make-up" attendance. We cover 10 chapters total in this course, so you have ***5 "completely excused" abscences***. 
+
+### Homework
+
+There will be weekly homework assignments using the online learning system ALEKS. One lowest homework score will be dropped at the end of semester. 
+
+Late homework will not be accepted. It is up to instructor discretion if an extension is provided.
+
+### Homework Corrections
+
+For all homework assignments in the course, students are allowed to submit corrections of their work ***for each problem completed for less than full points.*** Incomplete questions will not be offered the opportunity to be corrected. 
+
+Corrections provide ***100% points back.*** Submissions will ***only be accepted through the Canvas assignment***. 
+
+For the entire homework assignment, per question you wish to correct, provide the following:
+
+1. Why you got the answer wrong (i.e., I mistook a qualitative variable for a quantitative variable, so I described it as an Interval variable as a result)
+2. Why that answer is wrong (i.e., the variable describes a ranking of salespeople at Amazon, which is not a quantification of salespeople nor is it an interval where 0 doesn't reflect absence of something)
+3. What the correct answer is (i.e., the variable is Qualitative and Ordinal)
+4. Why it's the correct answer (i.e., a numeric ranking is a categorization of something so it is qualitative and it has a natural ordering where 1 is above 2 so it is ordinal)
+
+## General Policies
+
+## Generative AI policy  
+The University has yet to release a comprehensive AI policy. Thanks to that, I get to define my own.
+
+I cannot stop any student from using Large Language Models (LLMs), Small Language Models (SLMs), or Generative AI. However if I suspect you are using one of these tools to **replace knowledge work** I will doll out the most egregious punishment any instructor can use: ***I will make you do the work again.*** If you truly believe you can circumvent my methods of detection, please refer to the "About" page of my academic website. 
+
+AI related tools are ***tools***. Please recognize that they are something ***you should be competent with***, and I will ***gladly*** help you understand their myriad of use-cases in and outside of this class. Do not use them to ***replace knowledge work***, and if you're unsure whether the action you're doing qualifies as that, please reach out to me directly and just ask. 
+
+## Academic Honesty (Gracefully Plagarized from the University Code of Conduct)
+
+Undergraduate and graduate students, by registration, acknowledge the jurisdiction of the Honor System (www.ksu.edu/honor). The policies and procedures of the Honor System apply to all full and part-time students enrolled. A grade of XF can result from a breach of academic honesty.
+
+## Academic Accommodations for Students with Disabilities  
+
+Students with disabilities who need classroom accommodations, access to technology, or information about emergency building/campus evacuation processes should contact the Student Access Center and/or their instructor.  Services are available to students with a wide range of disabilities including, but not limited to, physical disabilities, medical conditions, learning disabilities, attention deficit disorder, depression, and anxiety.  If you are a student enrolled in campus/online courses through the Manhattan or Olathe campuses, contact the Student Access Center at accesscenter@k-state.edu, 785-532-6441.
+
+## Expectations for Classroom Conduct  
+
+All student activities in the University, including this course, are governed by the Student Judicial Conduct Code as outlined in the Student Government Association By Laws, Article VI, Section 3, number 2. Students that engage in behavior that disrupts the learning environment may be asked to leave the class.
+
+
+## Copyright Notification  
+
+During this course, students are prohibited from selling notes to or being paid for taking notes by any person or commercial firm, or posting lecture notes on any websites without the express written permission of the professor teaching this course.
