@@ -6,4 +6,4 @@ Jan 21
 : [Populations, Samples, and Sampling Techniques](https://rmshksu.github.io/stat225_spring2025/classes/d1-225-spr25.html)
 
 Jan 23
-: [Variable Types and Qualitative Graphical Summaries](#)
+: [Variable Types and Qualitative Graphical Summaries](https://rmshksu.github.io/stat225_spring2025/classes/d2-225-spr25.html)
