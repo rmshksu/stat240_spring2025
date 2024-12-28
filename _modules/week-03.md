@@ -1,5 +1,5 @@
 ---
-title: Week 3 - Numerical Summaries of Data
+title: Week 3 - Numerical Summaries of Data I
 ---
 
 Feb 04
