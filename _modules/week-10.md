@@ -1,5 +1,5 @@
 ---
-title: Week 10 - Sampling Distributions and Uncertainty
+title: Week 10 - Sampling Distributions and Uncertainty I
 ---
 
 Apr 01
