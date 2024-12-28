@@ -1,5 +1,5 @@
 ---
-title: Week 4 - Numerical Summaries of Data (Cont.)
+title: Week 4 - Numerical Summaries of Data I
 ---
 
 Feb 11
