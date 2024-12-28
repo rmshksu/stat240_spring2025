@@ -1,5 +1,5 @@
 ---
-title: Week 8 - Theory I: Random Variables
+title: Week 8 - Random Variables
 ---
 
 Mar 11
