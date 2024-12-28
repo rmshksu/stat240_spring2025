@@ -1,5 +1,5 @@
 ---
-title: Week 11 - Uncertainty II & Hypothesis Testing
+title: Week 11 - Uncertainty II
 ---
 
 Apr 08
