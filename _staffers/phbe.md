@@ -3,7 +3,7 @@ name: Phoebe B. McKay
 role: Teaching Assistant
 email: 
 website: 
-photo: phbepro.jpeg
+photo: phbepro2.jpeg
 meta:
   Office Hours: 
 ---
