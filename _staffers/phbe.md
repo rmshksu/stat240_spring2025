@@ -1,6 +1,6 @@
 ---
 name: Phoebe B. McKay
-role: Graduate Teaching Assistant
+role: Teaching Assistant
 email: 
 website: 
 photo: phbepro.jpeg
