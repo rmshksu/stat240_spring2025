@@ -58,11 +58,11 @@ defaults:
       type: schedules
     values:
       layout: schedule
-#  - scope:
-#      path: ''
-#      type: announcements
-#    values:
-#      layout: announcement
+  - scope:
+      path: ''
+      type: announcements
+    values:
+      layout: announcement
 
 compress_html:
   clippings: all
