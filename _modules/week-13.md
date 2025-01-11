@@ -1,5 +1,5 @@
 ---
-title: Week 13 - One-Sample Hypothesis Testing
+title: Week 13 - Hypothesis Testing I
 ---
 
 Apr 22
