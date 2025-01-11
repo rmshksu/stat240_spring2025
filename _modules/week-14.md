@@ -1,5 +1,5 @@
 ---
-title: Week 14 - Two-Sample Hypothesis Testing
+title: Week 14 - Hypothesis Testing II
 ---
 
 Apr 29
