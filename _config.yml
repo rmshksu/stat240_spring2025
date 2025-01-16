@@ -17,7 +17,7 @@ title: STAT 240
 tagline: Kansas State University
 description: An introduction to statistical literacy and analysis in biology
 author: Robert Sholl
-baseurl: '/stat225_spring2025' # the subpath of your site, e.g. /blog
+baseurl: '/stat240_spring2025' # the subpath of your site, e.g. /blog
 url: 'https://rmshksu.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
