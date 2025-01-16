@@ -44,7 +44,7 @@ The second half of this course will introduce simple concepts of Mathematical an
 
 ## Textbook
 
-Elementary Statistics, 4th edition, by Navidi & Monk. Note: An electronic version of the text is included with the access code to ALEKS, the online learning system from McGraw-Hill that is required.
+
 
 ## Grading
 
