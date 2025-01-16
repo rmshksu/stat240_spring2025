@@ -5,5 +5,5 @@ email:
 website: 
 photo: phbepro2.jpeg
 meta:
-  Office Hours: 
+  Office Hours: By Appointment Only
 ---
