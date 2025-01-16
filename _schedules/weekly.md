@@ -20,18 +20,31 @@ timeline:
   - '5:30 PM'
 schedule:
   - name: Monday
+    events:
+      - name: Lecture
+        start: 11:30 AM
+        end: 12:20 PM
+        location: Dickens 106
+      - name: Office Hours
+        start: 12:20 PM
+        end: 1:20 PM
+        location: Dickens 106
   - name: Tuesday
-    events:
-      - name: Lecture
-        start: 9:30 AM
-        end: 10:50 AM
-        location: Dickens
   - name: Wednesday
-  - name: Thursday
     events:
       - name: Lecture
-        start: 9:30 AM
-        end: 10:50 AM
-        location: Dickens
+        start: 11:30 AM
+        end: 12:20 PM
+        location: Dickens 106
+      - name: Office Hours
+        start: 12:20 PM
+        end: 1:20 PM
+        location: Dickens 106
+  - name: Thursday
   - name: Friday
+    events:
+      - name: Lecture
+        start: 11:30 AM
+        end: 12:20 PM
+        location: Dickens 106
 ---
