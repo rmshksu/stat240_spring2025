@@ -4,7 +4,7 @@ week: 0
 date: 2025-01-21
 ---
 
-Welcome to Introduction to Statistics!
+Welcome to Biometrics I!
 
 Take the time to read through the [About](https://rmshksu.github.io/stat225_spring2025/about/) page to review the general Syllabus.
 
