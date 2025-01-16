@@ -1,6 +1,6 @@
 ---
 layout: home
-title: STAT 225
+title: STAT 240
 nav_exclude: true
 permalink: /:path/
 seo:
@@ -8,15 +8,15 @@ seo:
   name: STAT 225
 ---
 
-# STAT 225 - Introduction to Statistics
+# STAT 240 - Biometrics I
 Spring 2025  
 Kansas State University
 
 **Instructor:** Robert Sholl
 
-**Course Coordinator:** Yoshimitsu Nagaoka
+**Course Coordinator:** Dr. Mike Higgins
 
-**Time:** TBA
+**Time:** 11:30 AM - 12:20 PM
 
 **Course Description:** A basic first course in probability and statistics; frequency distributions; averages and measures of variation; probability; simple confidence intervals and hypothesis tests appropriate to binomial and normal populations; if time permits, correlation and regression including confidence intervals and hypothesis tests for bivariate populations.
 
