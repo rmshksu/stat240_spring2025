@@ -66,7 +66,7 @@ The course will be for 3 credits, graded on an A-F scale. A (>90%), B (90%-80%),
 
 ### Attendance  
 
-Attendance to lecture and in-class participation are completely optional, but highly recommended. If you're late or need to leave early, you are only asked to be respectful and not be disruptive. I would rather you be in class at all than be class on-time or stay for the full duration. 
+Attendance to lecture and in-class participation are completely optional, but highly recommended. If you're late or need to leave early, you are only asked to be respectful and not be disruptive. I would rather you be in class **at all** than come to class on-time or stay for the full duration. 
 
 ### Attendance Credit/Question of the Day
 
@@ -76,9 +76,7 @@ These problems are **not graded**, simply counted for participation and assigned
 
 These will be scored these as they are submitted, based off of level of understanding. **This is purely for data collection and will never reflect on you negatively or positively.** They simply provide a persistent understanding of the classes competency level, so that instruction can be adjusted as needed.
 
-Periodically, I will take a student's work they submitted for an attendance problem and convert it into digital writing to make it completely anonymous. I may or may not change their work slightly to add to the anonymity. The class will be asked to submit a score and a single piece of feedback on the work the student has done. That will count as your attendance for the **entire week**. 
-
-After **every 2 chapters** in our course schedule are completed, I will release a set of practice problems that can be used as a "make-up" attendance. We cover 10 chapters total in this course, so you have ***5 "completely excused" abscences***. 
+Periodically, I will take a student's work they submitted for an attendance problem and convert it into digital writing to make it completely anonymous. I may or may not change their work slightly to add to the anonymity. The class will be asked to submit a score and a single piece of feedback on the work the student has done. That will count as a **"make-up attendance"**.
 
 ### Homework
 
