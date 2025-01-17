@@ -1,12 +1,12 @@
 ---
-title: Week 1 - Basic Ideas of Statistics and Graphical Summaries
+title: Week 1 - Visualizing and Describing Data
 ---
 
 Jan 20
 : MLK Day Observation
 
 Jan 22
-: [Populations, Samples, and Sampling Techniques](https://rmshksu.github.io/stat240_spring2025/classes/d1-225-spr25.html)
+: [Parameters, Statistics, and Sampling](https://rmshksu.github.io/stat240_spring2025/classes/d1-240-spr25.html)
 
 Jan 24
-: 
+: [Visualizing Data](https://rmshksu.github.io/stat240_spring2025/classes/d2-240-spr25.html)
