@@ -58,7 +58,7 @@ The course will be for 3 credits, graded on an A-F scale. A (>90%), B (90%-80%),
 
 * Final Exam - 30%
 
-* Attendace - 10%
+* Attendance - 10%
 
 ### Attendance  
 
