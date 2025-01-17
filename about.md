@@ -30,9 +30,11 @@ My secondary goal is to ensure that ***if you attend class every day*** you will
 
 To builds students statistical literacy and introduce them to basic statistical analysis.
 
-The first half of this course will focus on developing a baseline vocabulary for the science of Statistics, a fundamental understanding of statistical/mathematical notation, and performing basic measurement calculations.
+This course is loosely split into two segments:
 
-The second half of this course will introduce simple concepts of Mathematical and Theoretical Statistics, and guide students through the process of performing the two most fundamental statistical analyses; regression and hypothesis testing.
+The first portion of this course will focus on developing a baseline vocabulary for the science of Statistics, a fundamental understanding of statistical/mathematical notation, and performing basic measurement calculations.
+
+The second portion of this course will introduce simple concepts of Mathematical and Theoretical Statistics, and guide students through the process of performing the two most fundamental statistical analyses; regression and hypothesis testing.
 
 **Prerequisites:** There are no formal prerequisites for this course, however it is **highly suggested** you have completed a high school algebra course before taking this class. If you lack that prerequisite, or feel incredibly shakey/rusty on those skills, we offer a "catch-up" course to help students understand enough algebra/math to succeed in this class. Details will be included closer to the semester. 
 
@@ -44,7 +46,11 @@ The second half of this course will introduce simple concepts of Mathematical an
 
 ## Textbook
 
+There is no required textbook for this course. Most of the homework questions come from "The Practice of Statistics in the Life Sciences, 4th Edition, Baldi and Moore", but you will not need access to the book in order to do the homework.
 
+If you'd like to follow along in that textbook, feel free to acquire it.
+
+Recommended readings and materials may pop up over time, but will be freely accessible if they're required.
 
 ## Grading
 
@@ -54,11 +60,9 @@ The course will be for 3 credits, graded on an A-F scale. A (>90%), B (90%-80%),
 
 * Exam 2 - 20%
 
-* Homework - 20%
+* Homework - 30%
 
 * Final Exam - 30%
-
-* Attendance - 10%
 
 ### Attendance  
 
@@ -78,6 +82,9 @@ After **every 2 chapters** in our course schedule are completed, I will release 
 
 ### Homework
 
+There will be 5-7 homework assignments throughout the semester. Homework should be submitted through Canvas before the due time. Please show your work to get full credits.
+
+Homework assignments should be submitted to Canvas. Please scan or take pictures of your answers and upload it to Canvas. Supported file formats include .pdf, .doc, .docx, .jpg, and .jpeg.
 
 Late homework will not be accepted. It is up to instructor discretion if an extension is provided.
 
