@@ -78,7 +78,6 @@ After **every 2 chapters** in our course schedule are completed, I will release 
 
 ### Homework
 
-There will be weekly homework assignments using the online learning system ALEKS. One lowest homework score will be dropped at the end of semester. 
 
 Late homework will not be accepted. It is up to instructor discretion if an extension is provided.
 
