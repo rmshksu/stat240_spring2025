@@ -30,11 +30,13 @@ My secondary goal is to ensure that ***if you attend class every day*** you will
 
 To builds students statistical literacy and introduce them to basic statistical analysis.
 
-This course is loosely split into two segments:
+This course is loosely split into three segments:
 
-The first portion of this course will focus on developing a baseline vocabulary for the science of Statistics, a fundamental understanding of statistical/mathematical notation, and performing basic measurement calculations.
+The first portion of this course will focus on developing a baseline vocabulary for the science of Statistics, learning basic measurement calculations, methods of observational studies,and performing regression analysis.
 
-The second portion of this course will introduce simple concepts of Mathematical and Theoretical Statistics, and guide students through the process of performing the two most fundamental statistical analyses; regression and hypothesis testing.
+The second portion of this course will introduce experimental design, as well as probability and distribution theory.
+
+The third portion of this course will focus on inference, hypothesis testing, and comparisons. 
 
 **Prerequisites:** There are no formal prerequisites for this course, however it is **highly suggested** you have completed a high school algebra course before taking this class. If you lack that prerequisite, or feel incredibly shakey/rusty on those skills, we offer a "catch-up" course to help students understand enough algebra/math to succeed in this class. Details will be included closer to the semester. 
 
