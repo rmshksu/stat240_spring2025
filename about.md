@@ -114,7 +114,7 @@ For the entire homework assignment, per question you wish to correct, provide th
 ## Generative AI policy  
 The University has yet to release a comprehensive AI policy. Thanks to that, I get to define my own.
 
-I cannot stop any student from using Large Language Models (LLMs), Small Language Models (SLMs), or Generative AI. However if I suspect you are using one of these tools to **replace knowledge work** I will doll out the most egregious punishment any instructor can use: ***I will make you do the work again.*** If you truly believe you can circumvent my methods of detection, please refer to the "About" page of my academic website. 
+I cannot stop any student from using Large Language Models (LLMs), Small Language Models (SLMs), or Generative AI. However if I suspect you are using one of these tools to **replace knowledge work** I will dole out the most egregious punishment any instructor can use: ***I will make you do the work again.*** If you truly believe you can circumvent my methods of detection, please refer to the "About" page of my academic website. 
 
 AI related tools are ***tools***. Please recognize that they are something ***you should be competent with***, and I will ***gladly*** help you understand their myriad of use-cases in and outside of this class. Do not use them to ***replace knowledge work***, and if you're unsure whether the action you're doing qualifies as that, please reach out to me directly and just ask. 
 
