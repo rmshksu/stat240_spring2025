@@ -1,0 +1,824 @@
+---
+title: "Day 8"
+format: html
+editor: visual
+embed-resources: true
+---
+
+```{r, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(knitr)
+library(latex2exp)
+```
+
+## Review
+
+---
+
+#### Observational Studies
+
+>An observational study is one in which we study something as it exists
+
+- Observe individuals and measure variables of interest
+
+  - Gather medical records to study relationship between smoking and heart disease
+
+<br>
+
+***Does NOT attempt to influence the response***
+
+<br>
+
+---
+
+### Designed Experiments
+
+>An experiment occurs when we control the conditions under which observations are taken
+
+- Deliberately imposes treatments on individuals in order to observe response
+
+  - Lab rats are given either a low carbohydrate diet or a high carbohydrate diet to see the effect on weight
+  
+<br>
+
+***Does influence response***
+
+<br>
+
+**Experimental Unit:** Subject, animal, or object used in the experiment
+
+<br>
+
+**Treatment:** Experimental condition applied to experimental unit
+
+<br>
+
+**Response:** The thing we measure to determine the effect of the treatments
+
+<br>
+
+---
+
+#### Confounding 
+
+Two variables in a study/experiment
+
+- Effects are indistinguishable
+
+- Can’t tell which variable caused an effect
+
+- Observational studies don’t show causality
+
+- Experiments can show causality 
+
+  - Typically have to have that intent designed into them
+  
+<br>
+
+---
+
+#### Collinearity
+
+Two variables are linearly dependent
+
+>"A form of extreme confounding"
+
+- The variables contain the same information to an extent
+
+<br>
+
+---
+
+#### Bias
+
+>The design of statistical study is biased when one outcome is systematically preferred to others
+
+<br>
+
+***Impossible to correct for***
+
+<br>
+
+It is a systematic error caused by bad sampling design
+
+---
+
+#### Problems in Sampling
+
+>Making up data is always bad
+
+<br>
+
+>Samples of convenience are easy, cheap, and easy to intentionally bias
+
+<br>
+
+>Voluntary response surveys can work well if designed well, but they're very easy to design poorly
+
+<br>
+
+**Undercoverage**
+
+<br>
+
+**Nonresponse**
+
+<br>
+
+**Response Bias**
+
+<br>
+
+**Question Wording**
+
+<br>
+
+**Order of Questions**
+
+---
+
+#### Some Observational Study Types
+
+**Case-control studies:** 
+
+A form of observational study that adjusts for this unique problem
+
+<br>
+
+- Select the case-subjects (those with the trait/condition) of interest
+
+  - Take a random sample of those individuals
+  
+<br>
+  
+- Select a control group without the condition (ideally with similarities to the case subjects)
+
+  - Take a random sample of those individuals
+
+<br>
+
+**Cohort Studies:**
+
+**Subjects sharing a common demographic characteristic are enrolled and observed at regular intervals over an extended period of time**
+
+<br>
+
+- Starts with a group of similar individuals
+
+- Observations made over regular intervals
+
+<br>
+
+<br>
+
+
+
+------------------------------------------------------------------------
+
+**Questions?**
+
+<br> <br>
+
+------------------------------------------------------------------------
+
+**Goals for Today:**
+
+1.  Quantify the strength of linear relationships
+
+2.  Introduce Least Squares Regression
+
+3.  Determine the age of the universe
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+## Correlation, Observation, and Regression
+
+<br>
+
+### Strength of Linear Relationship
+
+-   When two variables have a linear relationship
+
+    -   It's useful to quantify how strong the relationship is
+
+<br>
+
+-   Visual impressions aren't really reliable
+
+    -   Axis scaling can change everything:
+
+<br>
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+library(gridExtra)
+x <- 1:50
+y <- 1:50 + rnorm(50,100,3)
+df <- data.frame(x=x,y=y)
+
+p1 <- ggplot(data = df, aes(x = x, y = y)) +
+  geom_point() +
+  theme_bw()
+
+p2 <- ggplot(data = df, aes(x = x, y = y)) +
+  geom_point() + 
+  coord_cartesian(ylim = c(0, 600), xlim = c(1, 60)) + 
+  theme_bw()
+
+grid.arrange(p1, p2, ncol = 2)
+```
+
+<br>
+
+***Same exact data***
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+### Correlation Coefficient
+
+**Numerical measurement of the strength (and direction) of the linear relationship between two quantitative variables**
+
+<br>
+
+-   Given $n$ ordered pairs ($x_i,y_i$)
+
+    -   With sample means $\bar{x}$ and $\bar{y}$
+
+    -   Sample standard deviations $s_x$ and $s_y$
+
+    -   The correlation coefficient $r$ is given by:
+
+<br>
+
+$$r = \frac{1}{n-1} \sum_i \left( \frac{x_i - \bar{x}}{s_x} \right) \left( \frac{y_i - \bar{y}}{s_y} \right)$$
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+#### Properties of the Correlation Coefficient
+
+1.  The value is always between $-1 \le r \le 1$
+
+-   If $r=1$, all of the data falls on a line with a positive slope
+
+-   If $r=-1$ all of the data falls on a line with a negative slope
+
+-   The closer $r$ is to 0, the weaker the linear relationship between $x$ and $y$
+
+-   If $r=0$ *no linear relationship exists*
+
+<br>
+
+2.  The correlation does not depend on the unit of measurement for the two variables
+
+-   $x$ is House price and $y$ is $ft^2$, but they can still have $r$ calculated
+
+<br>
+
+3.  Correlation is very sensitive to outliers.
+
+-   One point that does not belong in the dataset can result in a misleading correlation
+
+-   Always plot your data!
+
+-   Would we say this measurement is resistant or not?
+
+<br>
+
+4.  Correlation measures only the linear relationship and may not (by itself) detect a nonlinear relationship
+
+<br>
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+set.seed(42)
+# perfect positive linear
+x1 <- seq(1, 10)
+y1 <- x1
+
+# perfect negative linear
+x2 <- seq(1, 10)
+y2 <- -x2
+
+# strong positive linear
+x3 <- seq(1, 10)
+y3 <- x3 + rnorm(10, mean = 0, sd = 1)
+
+# strong negative linear
+x4 <- seq(1, 10)
+y4 <- -x4 + rnorm(10, mean = 0, sd = 1)
+
+# weak positive linear 
+x5 <- seq(1, 10)
+y5 <- x5 + rnorm(10, mean = 0, sd = 2)
+
+# weak negative linear 
+x6 <- seq(1, 10)
+y6 <- -x6 + rnorm(10, mean = 0, sd = 2)
+
+# almost no linear
+x7 <- seq(1, 10)
+y7 <- rnorm(10, mean = 5, sd = 5)
+
+# "nonlinear"
+x8 <- seq(1, 10)
+y8 <- (x6 - 5)^2
+
+# correlation coefficients
+r1 <- 1
+r2 <- -1
+r3 <- 0.930
+r4 <- 0.630
+r5 <- 0.067
+r6 <- 0
+r7 <- cor(x7,y7)
+r8 <- cor(x8,y8)
+
+par(mar=c(1,1,4,1))
+plot(x1,y1,xaxt="n",yaxt="n",xlab="",ylab="",main="a perfect positive linear relationship",pch=20,cex=2)
+text(3,6,"r = 1",cex=2)
+plot(x2,y2,xaxt="n",yaxt="n",xlab="",ylab="",main="a perfect negative linear relationship",pch=20,cex=2)
+text(3,-6.5,"r = -1",cex=2)
+plot(x3,y3,xaxt="n",yaxt="n",xlab="",ylab="",main="a strong positive linear relationship",pch=20,cex=2)
+text(3,7,"r = 0.93",cex=2)
+plot(x4,y4,xaxt="n",yaxt="n",xlab="",ylab="",main="a strong negative linear relationship",pch=20,cex=2)
+text(3,-7,"r = -0.8",cex=2)
+plot(x5,y5,xaxt="n",yaxt="n",xlab="",ylab="",main="a weaker positive linear relationship",pch=20,cex=2)
+text(7,1.5,"r = 0.43",cex=2)
+plot(x6,y6,xaxt="n",yaxt="n",xlab="",ylab="",main="a weaker negative linear relationship",pch=20,cex=2)
+text(3,-9,"r = -0.42",cex=2)
+plot(x7,y7,xaxt="n",yaxt="n",xlab="",ylab="",main="almost no linear relationship",pch=20,cex=2)
+text(4,5,"r = 0.1",cex=2)
+plot(x8,y8,xaxt="n",yaxt="n",xlab="",ylab="",main="an exact nonlinear relationship",pch=20,cex=2)
+text(5,13,"r = 0",cex=2)
+```
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+### Least-Squares Regression
+
+**Recall our cholesterol example:**
+
+<br>
+
+**Two variables for each individual in the sample**
+
+<br>
+
+-   $x=$ age of the patient
+
+-   $y=$ serum cholesterol level
+
+<br>
+
+For the $i^{th}$ patient, we'll denote it's observated values as:
+
+<br>
+
+-   $x_i=$ the age of the $i^{th}$ patient in *years*
+
+-   $y_i=$ the serum cholesterol level of the $i^{th}$ patient in mmol/L
+
+<br>
+
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+heart=read.csv("heart.csv")
+set.seed(1)
+sub=heart[sample(nrow(heart),20),]
+temp=data.frame(Age=sub$age,
+                Cholersterol=sub$chol)
+kable(t(temp),format="simple")
+```
+
+<br>
+
+The associated scatterplot:
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+X=sub$age
+Y=sub$chol
+m=lm(Y~X)
+par(mar=c(4,4,3.5,2))
+plot(X,Y,type="n",xlab="Age",ylab="Serum Cholesterol",main="Scatterplot of Age vs Cholesterol")
+abline(v=40,col="#D1D1D1")
+abline(v=45,col="#D1D1D1")
+abline(v=50,col="#D1D1D1")
+abline(v=55,col="#D1D1D1")
+abline(v=60,col="#D1D1D1")
+abline(v=65,col="#D1D1D1")
+abline(v=70,col="#D1D1D1")
+abline(h=200,col="#D1D1D1")
+abline(h=250,col="#D1D1D1")
+abline(h=300,col="#D1D1D1")
+points(X,Y,pch=20,cex=2)
+```
+
+<br>
+
+<br>
+
+I've alluded in the past to the idea that we can **draw a line through these points:**
+
+<br>
+
+<br>
+
+```{r,echo=FALSE,message=FALSE,warning=FALSE,fig.align='center'}
+par(mar=c(4,4,3.5,2))
+plot(X,Y,type="n",xlab="Age",ylab="Serum Cholesterol",main="Scatterplot of Age vs Cholesterol")
+abline(v=40,col="#D1D1D1")
+abline(v=45,col="#D1D1D1")
+abline(v=50,col="#D1D1D1")
+abline(v=55,col="#D1D1D1")
+abline(v=60,col="#D1D1D1")
+abline(v=65,col="#D1D1D1")
+abline(v=70,col="#D1D1D1")
+abline(h=200,col="#D1D1D1")
+abline(h=250,col="#D1D1D1")
+abline(h=300,col="#D1D1D1")
+points(X,Y,pch=20,cex=2)
+points(X,predict(m,type="response"),type="l",lwd=2)
+```
+
+<br>
+
+<br>
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+par(mar=c(4,4,3.5,2))
+plot(X,Y,type="n",xlab="Age",ylab="Serum Cholesterol",main="Scatterplot of Age vs Cholesterol")
+abline(v=40,col="#D1D1D1")
+abline(v=45,col="#D1D1D1")
+abline(v=50,col="#D1D1D1")
+abline(v=55,col="#D1D1D1")
+abline(v=60,col="#D1D1D1")
+abline(v=65,col="#D1D1D1")
+abline(v=70,col="#D1D1D1")
+abline(h=200,col="#D1D1D1")
+abline(h=250,col="#D1D1D1")
+abline(h=300,col="#D1D1D1")
+points(X,Y,pch=20,cex=2)
+abline(20,4.2,col="aquamarine",lwd=3)
+abline(140,1.3,lwd=3,col="green4")
+abline(125,3,lwd=3,col="pink2")
+abline(-8,4.1,lwd=3,col="red4")
+```
+
+<br>
+
+> **Why couldn't these lines be viable ones for describing this data?**
+
+<br> <br>
+
+<br> <br>
+
+> The vertical distances are from the points to the line are smaller for the first line
+
+<br>
+
+**We determine exactly how well the line fits by:**
+
+-   Squaring the vertical distances
+
+-   And adding them up
+
+<br>
+
+The "Best Fit" line is the line for which the **sum of squared distances** is as **small** as possible
+
+<br>
+
+This line is known as the **Least Squared Regression Line**
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+<br>
+
+Given ordered pairs: ($x,y$)
+
+-   With sample means: $\bar{x}$ and $\bar{y}$
+
+    -   Sample standard deviations: $s_x$ and $s_y$
+
+    -   Correlation coefficient: $r$
+
+    -   The equation of the least-squared regression line for predicting $y$ from $x$ is:
+
+<br>
+
+$$\hat{y}=\beta_0+\beta_1x$$
+
+<br>
+
+Where the **slope** ($\beta_1$) is:
+
+<br>
+
+$$\beta_1 = r * {s_y\over s_x}$$
+
+<br>
+
+And the **intercept** ($\beta_0$) is:
+
+<br>
+
+$$\beta_0=\bar{y}-\beta_1 \bar{x}$$
+
+<br>
+
+-   The variable we want to predict is the **outcome** or **response** variable
+
+<br>
+
+-   And the variable we are given is the **explanatory** or **predictor** variable
+
+<br>
+
+------------------------------------------------------------------------
+
+> Let's calculate the regression equation from our cholesterol example:
+
+<br>
+
+<br>
+
+$$\bar{x}= 54.5,\ \bar{y}=241.25 ,\ s_x=8.49 ,\ s_y= 39.96,\ r=0.3163405$$
+
+<br>
+
+<br>
+
+$$\beta_1 = r * {s_y\over s_x}$$
+
+<br>
+
+<br>
+
+$$\beta_0=\bar{y}-\beta_1 \bar{x}$$
+
+<br>
+
+<br>
+
+$$\hat{y}=\beta_0+\beta_1x$$
+
+<br>
+
+<br>
+
+**Given our regression equation, predict the cholesterol level for your age**
+
+<br>
+
+<br>
+
+## Interpretation of Least Squares Regression
+
+-   **Interpreting** the predicted $\hat{y}$
+
+    -   The predicted value of $\hat{y}$ can be used to estimate the average outcome for a given value of the explanatory variable $x$
+
+    -   For any given value of $x$, the value $\hat{y}$ is an estimate of the average $y$-value for all points with that $x$-value
+    
+<br>
+
+-   **Interpreting** $y$-intercept $b_0$
+
+    -   The y-intercept is $b_0$ is the point where the line crosses $y$-axis. This has two meanings
+
+    -   If the data has **both** positive and negative $x$-values the $y$-intercept is the estimated outcome when the value of explanatory variable is $0$
+    
+<br>
+
+If the x-values are all positive or all negative then $b_0$ does **not** have useful information.
+
+-   **Interpreting** the slope $b_1$
+
+    -   If the x-values of two points differ by 1, their $y$-values will differ by an amount equal to the slope of the line
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+> At the final exam the professor asked each student to indicate how many hours they have studied for the exam
+
+-   The professor computes the least-square regression line for predicting the final exam scores from the number of hours studied
+
+$$\hat{y} = 50 + 5x$$
+
+<br>
+
+-   Antoine has studied for $6$ hours. What do you predict his score would be?
+
+<br>
+
+<br>
+
+-   Emma studied $3$ hours more than Jeremy did. How much higher do you predict Emma’s score to be?
+
+<br>
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+> Is there an interpretation of the $y$-intercept?
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+set.seed(2)
+temp_x <- seq(-30,52,1.65) + rnorm(50,0,4) 
+time_y <- seq(0.1,5,.1)
+temp_time_df <- data.frame(temp = temp_x,
+                           time = time_y)
+
+tt_m <- lm(time ~ temp, data=temp_time_df)
+
+ggplot(data=temp_time_df,aes(x=temp,y=time)) +
+  geom_point() + 
+  geom_line(aes(x=temp,y=tt_m$fitted.values),color="blue") +
+  labs(x="Temperature (Farenheit)",y="Time to Freeze (hours)") +
+  theme_bw() + coord_cartesian(xlim=c(-30,55),ylim=c(0,5))
+```
+
+The least square regression line is $\hat{y} = 1.908 + 0.06x$ where $x$ is temperature in freezer in Fahrenheit and $y$ is the time it takes to freeze.
+
+<br>
+
+<br>
+
+<br>
+
+------------------------------------------------------------------------
+
+### Predicting the Age of the Universe with LSR
+
+> Below is a plot of velocity against distance for 24 galaxies, according to measurements made using the Hubble Space Telescope - Credit: Wood 2006
+
+<br>
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+library(gamair)
+data(hubble)
+par(mar=c(4.1,4.3,3,1))
+plot(hubble$x,hubble$y,xlab="Distance (Mpc)",type="n",ylab=expression("Velocity (km"*s^{-1}*")"),
+     main="Hubble Telescope Data",ylim=c(0,2000),xlim=c(0,25))
+abline(h=0,col="#D1D1D1")
+abline(h=500,col="#D1D1D1")
+abline(h=1000,col="#D1D1D1")
+abline(h=1500,col="#D1D1D1")
+abline(h=2000,col="#D1D1D1")
+abline(v=0,col="#D1D1D1")
+abline(v=5,col="#D1D1D1")
+abline(v=10,col="#D1D1D1")
+abline(v=15,col="#D1D1D1")
+abline(v=20,col="#D1D1D1")
+abline(v=25,col="#D1D1D1")
+points(hubble$x,hubble$y,pch=20,cex=2)
+```
+
+<br>
+
+> Hubble's Law states that galaxies are moving away from Earth at speeds proportional to their distance
+
+<br>
+
+**We can leverage this law to estimate the age of the Universe**
+
+<br>
+
+This is, in fact, the data we (the scientific community, humanity, etc.) used to for this estimation until horrifyingly recently
+
+<br>
+
+**Hubble Law:**
+
+$$v=H_0D$$
+
+$$v \rightarrow \text{Velocity}$$
+
+$$D \rightarrow \text{Distance}$$
+
+$$H_0 \rightarrow \text{Hubble's Constant}$$
+
+<br>
+
+**Hubble's constant** is a *relative* ***rate*** of expansion (a.k.a. A slope)
+
+<br>
+
+By finding $H_0^{-1}$ and doing some unit conversions, we get a rough age of the universe
+
+-   Don't worry, I'm making that part easier (it's a lot of messy arithmetic on it's own)
+
+<br>
+
+From this data we calculated the following values:
+
+<br>
+
+$$
+\begin{array}{|c|c|c|c|c|c|c|}
+\hline
+\text{n} & \bar{x} & \bar{y} & s_x & s_y & r\\
+\hline
+24 & 12.055 & 924.375 & 5.815 & 512.814 & 0.8632\\
+\hline
+\end{array}
+$$
+
+<br>
+
+1.  Calculate $\beta_1$
+
+<br>
+
+$$\beta_1 = r * {s_y\over s_x}$$
+
+<br>
+
+<br>
+
+2.  Calculate $\beta_0$
+
+<br>
+
+$$\beta_0=\bar{y}-\beta_1 \bar{x}$$
+
+<br>
+
+<br>
+
+3.  Write out the Regression Equation
+
+<br>
+
+$$\hat{y}=\beta_0+\beta_1x$$
+
+<br>
+
+<br>
+
+4.  Compute the below formula:
+
+$$979.708\over \beta_1$$
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+```{r, echo=FALSE, fig.align='center', message=FALSE, warning=FALSE}
+m=lm(hubble$y~hubble$x)
+par(mar=c(4.1,4.3,3,1))
+plot(hubble$x,hubble$y,xlab="Distance (Mpc)",type="n",ylab=expression("Velocity (km"*s^{-1}*")"),
+     main="Hubble Telescope Data",ylim=c(0,2000),xlim=c(0,25))
+abline(h=0,col="#D1D1D1")
+abline(h=500,col="#D1D1D1")
+abline(h=1000,col="#D1D1D1")
+abline(h=1500,col="#D1D1D1")
+abline(h=2000,col="#D1D1D1")
+abline(v=0,col="#D1D1D1")
+abline(v=5,col="#D1D1D1")
+abline(v=10,col="#D1D1D1")
+abline(v=15,col="#D1D1D1")
+abline(v=20,col="#D1D1D1")
+abline(v=25,col="#D1D1D1")
+points(hubble$x,predict(m,type="response"),type="l",lwd=3,col="#A7A7A7")
+points(hubble$x,hubble$y,pch=20,cex=2)
+```
+
+<br>
+
+------------------------------------------------------------------------
+
+#### Attendance QOTD
+
+------------------------------------------------------------------------
+
+#### Go away
