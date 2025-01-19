@@ -82,9 +82,15 @@ These will be scored these as they are submitted, based off of level of understa
 
 Periodically, I will take a student's work they submitted for an attendance problem and convert it into digital writing to make it completely anonymous. I may or may not change their work slightly to add to the anonymity. The class will be asked to submit a score and a single piece of feedback on the work the student has done. That will count as a **"make-up attendance"**.
 
+### Quizzes
+
+There will be 3 quizzes throughout the course, held shortly before the exams. They'll be in class, aimed at preparing you for the Exams by covering the section content up to that point. 
+
+For each quiz students will have the opportunity to correct every incorrect problem, following a pre-specified rubric, for up to 100% of the lost points. 
+
 ### Homework
 
-There will be 5-7 homework assignments throughout the semester. Homework should be submitted through Canvas before the due time. Please show your work to get full credits.
+There will be 5 homework assignments throughout the semester. Homework should be submitted through Canvas before the due time. Please show your work to get full credits.
 
 Homework assignments should be submitted to Canvas. Please scan or take pictures of your answers and upload it to Canvas. Supported file formats include .pdf, .doc, .docx, .jpg, and .jpeg.
 
