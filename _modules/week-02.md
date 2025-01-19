@@ -10,3 +10,5 @@ Jan 29
 
 Jan 31
 : [Measures of Position](https://rmshksu.github.io/stat240_spring2025/classes/d05-240-spr25.html)
+: [](#) 
+  : **Homework 1 due 11.59 pm**{: .label .label-red }
