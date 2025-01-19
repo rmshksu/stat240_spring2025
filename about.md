@@ -58,15 +58,15 @@ Recommended readings and materials may pop up over time, but will be freely acce
 
 The course will be for 3 credits, graded on an A-F scale. A (>90%), B (90%-80%), C (80%-70%), D (70%-60%), and F (<60%). Final grade will be based on the following criteria:
 
-| Item              | Grade Weight | Extra Credit |
-| :---------------- | :----------: | -----------: |
-| Exam 1            |      20      |      2.5     |
-| Exam 2            |      20      |      2.5     |
-| Final Exam        |      25      |      5       |
-| Homework          |      20      |      0       |
-| Quizzes           |      15      |      10      |
-| Attendance        |      0       |      5       |
-| Total             |      100     |      25      |
+| Item              | Grade Weight |  Extra Credit |
+| :---------------- | :----------: | :-----------: |
+| Exam 1            |      20%     |      2.5%     |
+| Exam 2            |      20%     |      2.5%     |
+| Final Exam        |      25%     |      5%       |
+| Homework          |      20%     |      0%       |
+| Quizzes           |      15%     |      10%      |
+| Attendance        |      0%      |      5%       |
+| Total             |      100%    |      25%      |
 
 ### Attendance  
 
