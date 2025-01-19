@@ -2,11 +2,11 @@
 title: Week 4 - Linear Regression
 ---
 
-Feb 03
+Feb 10
 : 
 
-Feb 05
+Feb 12
 : 
 
-Feb 07
+Feb 14
 : 
