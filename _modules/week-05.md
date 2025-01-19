@@ -2,11 +2,11 @@
 title: Week 5 - Exam 1 Week
 ---
 
-Feb 03
+Feb 17
 : [Exam 1 Review]()
 
-Feb 05
+Feb 19
 : Remediation Day
 
-Feb 07
+Feb 21
 : Exam 1 GOOD LUCK!
