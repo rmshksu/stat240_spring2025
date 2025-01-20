@@ -70,7 +70,7 @@ The course will be for 3 credits, graded on an A-F scale. A (>90%), B (90%-80%),
 
 ### Attendance  
 
-Attendance to lecture and in-class participation are completely optional, but highly recommended. If you're late or need to leave early, you are only asked to be respectful and not be disruptive. I would rather you be in class **at all** than come to class on-time or stay for the full duration. 
+Attendance to lecture and in-class participation are completely optional, but highly recommended. If you're late or need to leave early, you are only asked to be respectful and not be disruptive. I would rather you be in class **at all** than not in attendance. 
 
 ### Attendance Credit/Question of the Day
 
@@ -78,13 +78,11 @@ Attendance to lecture and in-class participation are completely optional, but hi
 
 These problems are **not graded**, simply counted for participation and assigned the full points. 
 
-These will be scored these as they are submitted, based off of level of understanding. **This is purely for data collection and will never reflect on you negatively or positively.** They simply provide a persistent understanding of the classes competency level, so that instruction can be adjusted as needed.
-
-Periodically, I will take a student's work they submitted for an attendance problem and convert it into digital writing to make it completely anonymous. I may or may not change their work slightly to add to the anonymity. The class will be asked to submit a score and a single piece of feedback on the work the student has done. That will count as a **"make-up attendance"**.
+These will be scored as they are submitted, based off of level of understanding. **This is purely for data collection and will never reflect on you negatively or positively.** They simply provide a persistent understanding of the classes competency level, so that instruction can be adjusted as needed. These scores also help students gauge their understanding regularly. 
 
 ### Quizzes
 
-There will be 3 quizzes throughout the course, held shortly before the exams. They'll be in class, aimed at preparing you for the Exams by covering the section content up to that point. 
+There will be 3 quizzes throughout the course, held shortly before the exams. They're aimed at preparing you for the Exams by covering the section content up to that point. 
 
 For each quiz students will have the opportunity to correct every incorrect problem, following a pre-specified rubric, for up to 100% of the lost points. 
 
