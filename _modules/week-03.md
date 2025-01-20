@@ -10,3 +10,5 @@ Feb 05
 
 Feb 07
 : [Correlation and Regression](https://rmshksu.github.io/stat240_spring2025/classes/d08-240-spr25.html)
+: [](#) 
+  : **Homework 2 due 11:59 pm**{: .label .label-red }
