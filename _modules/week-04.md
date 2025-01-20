@@ -7,6 +7,8 @@ Feb 10
 
 Feb 12
 : [Assumptions]()
+: [](#)
+  : **Quiz 1**{: .label .label-green }
 
 Feb 14
 : [Transformations and Predictions]()
