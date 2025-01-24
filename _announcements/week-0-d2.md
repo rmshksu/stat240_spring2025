@@ -1,5 +1,5 @@
 ---
-title: Welcome!
+title: Day 2 Announcements
 week: 0
 date: 2025-01-21
 ---
