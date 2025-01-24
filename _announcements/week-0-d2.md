@@ -1,6 +1,6 @@
 ---
 title: Day 2 Announcements
-week: 0
+week: 0.5
 date: 2025-01-21
 ---
 
