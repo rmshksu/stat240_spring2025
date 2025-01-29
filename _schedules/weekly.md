@@ -43,6 +43,10 @@ schedule:
   - name: Thursday
   - name: Friday
     events:
+      - name: Help Lab Hours
+        start: 10:20 AM
+        end: 11:20 AM
+        location: Dickens 205
       - name: Lecture
         start: 11:30 AM
         end: 12:20 PM
