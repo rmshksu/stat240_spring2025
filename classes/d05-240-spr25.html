@@ -3133,8 +3133,8 @@ return"test"===t.get(e)&&!1===t["delete"](0)}return!1}catch(a){return!1}})()
 )) {!function(e){var t=Symbol("undef"),r=function a(){if(!(this instanceof a))throw new TypeError('Constructor WeakMap requires "new"');var e=OrdinaryCreateFromConstructor(this,a.prototype,{_keys:[],_values:[],_es6WeakMap:!0}),t=arguments.length>0?arguments[0]:undefined;if(null===t||t===undefined)return e;var r=Get(e,"set");if(!IsCallable(r))throw new TypeError("WeakMap.prototype.set is not a function");try{for(var o=GetIterator(t);;){var p=IteratorStep(o);if(!1===p)return e;var n=IteratorValue(p);if("object"!==Type(n))try{throw new TypeError("Iterator value "+n+" is not an entry object")}catch(s){return IteratorClose(o,s)}try{var i=Get(n,"0"),l=Get(n,"1");Call(r,e,[i,l])}catch(u){return IteratorClose(o,u)}}}catch(u){if(Array.isArray(t)||"[object Arguments]"===Object.prototype.toString.call(t)||t.callee){var y,c=t.length;for(y=0;y<c;y++)i=t[y][0],l=t[y][1],Call(r,e,[i,l])}}return e};Object.defineProperty(r,"prototype",{configurable:!1,enumerable:!1,writable:!1,value:{}}),CreateMethodProperty(r.prototype,"constructor",r),CreateMethodProperty(r.prototype,"delete",function(e){var r=this;if("object"!==Type(r))throw new TypeError("Method WeakMap.prototype.clear called on incompatible receiver "+Object.prototype.toString.call(r));if(!0!==r._es6WeakMap)throw new TypeError("Method WeakMap.prototype.clear called on incompatible receiver "+Object.prototype.toString.call(r));var o=r._keys;if("object"!==Type(e))return!1;for(var a=0;a<o.length;a++)if(r._keys[a]!==t&&SameValue(r._keys[a],e))return this._keys[a]=t,this._values[a]=t,this._size=--this._size,!0;return!1}),CreateMethodProperty(r.prototype,"get",function p(e){var r=this;if("object"!==Type(r))throw new TypeError("Method WeakMap.prototype.get called on incompatible receiver "+Object.prototype.toString.call(r));if(!0!==r._es6WeakMap)throw new TypeError("Method WeakMap.prototype.get called on incompatible receiver "+Object.prototype.toString.call(r));var o=r._keys;if("object"!==Type(e))return undefined;for(var a=0;a<o.length;a++)if(r._keys[a]!==t&&SameValue(r._keys[a],e))return r._values[a];return undefined}),CreateMethodProperty(r.prototype,"has",function n(e){var r=this;if("object"!=typeof r)throw new TypeError("Method WeakMap.prototype.has called on incompatible receiver "+Object.prototype.toString.call(r));if(!0!==r._es6WeakMap)throw new TypeError("Method WeakMap.prototype.has called on incompatible receiver "+Object.prototype.toString.call(r));var o=r._keys;if("object"!==Type(e))return!1;for(var a=0;a<o.length;a++)if(r._keys[a]!==t&&SameValue(r._keys[a],e))return!0;return!1}),CreateMethodProperty(r.prototype,"set",function i(e,r){var o=this;if("object"!==Type(o))throw new TypeError("Method WeakMap.prototype.set called on incompatible receiver "+Object.prototype.toString.call(o));if(!0!==o._es6WeakMap)throw new TypeError("Method WeakMap.prototype.set called on incompatible receiver "+Object.prototype.toString.call(o));var a=o._keys;if("object"!==Type(e))throw new TypeError("Invalid value used as weak map key");for(var p=0;p<a.length;p++)if(o._keys[p]!==t&&SameValue(o._keys[p],e))return o._values[p]=r,o;var n={"[[Key]]":e,"[[Value]]":r};return o._keys.push(n["[[Key]]"]),o._values.push(n["[[Value]]"]),o}),Object.defineProperty(r.prototype,Symbol.toStringTag,{configurable:!0,enumerable:!1,writable:!1,value:"WeakMap"}),"name"in r||Object.defineProperty(r,"name",{configurable:!0,enumerable:!1,writable:!1,value:"WeakMap"});try{CreateMethodProperty(e,"WeakMap",r)}catch(o){e.WeakMap=r}}(self);}if (!((function(e){try{if(Object.prototype.hasOwnProperty.call(e,"WeakSet")&&0===e.WeakSet.length){var t={},r=new e.WeakSet([t])
 return r.has(t)&&!1===r["delete"](0)}return!1}catch(a){return!1}})(self)
 )) {!function(e){var t=Symbol("undef"),r=function a(){if(!(this instanceof a))throw new TypeError('Constructor WeakSet requires "new"');var e=OrdinaryCreateFromConstructor(this,a.prototype,{_values:[],_size:0,_es6WeakSet:!0}),t=arguments.length>0?arguments[0]:undefined;if(null===t||t===undefined)return e;var r=Get(e,"add");if(!IsCallable(r))throw new TypeError("WeakSet.prototype.add is not a function");try{for(var o=GetIterator(t);;){var n=IteratorStep(o);if(!1===n)return e;var l=IteratorValue(n);try{Call(r,e,[l])}catch(c){return IteratorClose(o,c)}}}catch(c){if(IsArray(t)||"[object Arguments]"===Object.prototype.toString.call(t)||t.callee){var p,i=t.length;for(p=0;p<i;p++)Call(r,e,[t[p]])}}return e};Object.defineProperty(r,"prototype",{configurable:!1,enumerable:!1,writable:!1,value:{}}),CreateMethodProperty(r.prototype,"add",function n(e){var r=this;if("object"!==Type(r))throw new TypeError("Method WeakSet.prototype.add called on incompatible receiver "+Object.prototype.toString.call(r));if(!0!==r._es6WeakSet)throw new TypeError("Method WeakSet.prototype.add called on incompatible receiver "+Object.prototype.toString.call(r));if("object"!==Type(e))throw new TypeError("Invalid value used in weak set");for(var o=r._values,a=0;a<o.length;a++){var n=o[a];if(n!==t&&SameValueZero(n,e))return r}return r._values.push(e),r}),CreateMethodProperty(r.prototype,"constructor",r),CreateMethodProperty(r.prototype,"delete",function(e){var r=this;if("object"!==Type(r))throw new TypeError("Method WeakSet.prototype.delete called on incompatible receiver "+Object.prototype.toString.call(r));if(!0!==r._es6WeakSet)throw new TypeError("Method WeakSet.prototype.delete called on incompatible receiver "+Object.prototype.toString.call(r));if("object"!==Type(e))return!1;for(var o=r._values,a=0;a<o.length;a++){var n=o[a];if(n!==t&&SameValueZero(n,e))return o[a]=t,!0}return!1}),CreateMethodProperty(r.prototype,"has",function l(e){var r=this;if("object"!==Type(r))throw new TypeError("Method WeakSet.prototype.has called on incompatible receiver "+Object.prototype.toString.call(r));if(!0!==r._es6WeakSet)throw new TypeError("Method WeakSet.prototype.has called on incompatible receiver "+Object.prototype.toString.call(r));var o=r._values;if("object"!==Type(e))return!1;for(var a=0;a<o.length;a++){var n=o[a];if(n!==t&&SameValueZero(n,e))return!0}return!1}),"name"in r||Object.defineProperty(r,"name",{configurable:!0,enumerable:!1,writable:!1,value:"WeakSet"});try{CreateMethodProperty(e,"WeakSet",r)}catch(o){e.WeakSet=r}}(self);}function TrimString(e,u){var r=RequireObjectCoercible(e),t=ToString(r),n=/[\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF]+/.source;if("start"===u)var p=String.prototype.replace.call(t,new RegExp("^"+n,"g"),"");else p="end"===u?String.prototype.replace.call(t,new RegExp(n+"$","g"),""):String.prototype.replace.call(t,new RegExp("^"+n+"|"+n+"$","g"),"");return p}if (!("trim"in String.prototype&&function(){var r="​᠎"
-return!"\t\n\x0B\f\r                　\u2028\u2029\ufeff".trim()&&r.trim()===r}()
-)) {CreateMethodProperty(String.prototype,"trim",function t(){"use strict";var t=this;return TrimString(t,"start+end")});}if (!("parseFloat"in Number&&1/parseFloat("\t\n\x0B\f\r                　\u2028\u2029\ufeff-0")==-Infinity
+return!"\t\n\x0B\f\r                　\u2028\u2029\ufeff".trim()&&r.trim()===r}()
+)) {CreateMethodProperty(String.prototype,"trim",function t(){"use strict";var t=this;return TrimString(t,"start+end")});}if (!("parseFloat"in Number&&1/parseFloat("\t\n\x0B\f\r                　\u2028\u2029\ufeff-0")==-Infinity
 )) {!function(r,t){var a=function o(t){var a=String(t).trim(),e=r(a);return 0===e&&"-"==a.charAt(0)?-0:e};try{CreateMethodProperty(t,"parseFloat",a)}catch(e){t.parseFloat=a}CreateMethodProperty(Number,"parseFloat",t.parseFloat)}(parseFloat,this);}if (!("parseInt"in Number&&8===Number.parseInt("08")
 )) {!function(t,r){var e=function a(r,e){var n=String(r).trim();return t(n,e>>>0||(/^[-+]?0[xX]/.test(n)?16:10))};try{CreateMethodProperty(r,"parseInt",e)}catch(n){r.parseInt=e}CreateMethodProperty(Number,"parseInt",r.parseInt)}(parseInt,this);}function UTF16Decode(e,n){return 1024*(e-55296)+(n-56320)+65536}if (!("codePointAt"in String.prototype
 )) {CreateMethodProperty(String.prototype,"codePointAt",function e(t){var r=RequireObjectCoercible(this),o=ToString(r),n=ToInteger(t),i=o.length;if(n<0||n>=i)return undefined;var c=String.prototype.charCodeAt.call(o,n);if(c<55296||c>56319||n+1===i)return c;var a=String.prototype.charCodeAt.call(o,n+1);return a<56320||a>57343?c:UTF16Decode(c,a)});}function UTF16Encoding(n){return n<=65535?n:[Math.floor((n-65536)/1024)+55296,(n-65536)%1024+56320]}if (!("fromCodePoint"in String&&1===String.fromCodePoint.length
@@ -3632,11 +3632,11 @@ window.Quarto = {
 \end{array}
 \]</span></p>
 <p><br></p>
-<p><strong>Below is a table of exam scores from the STAT 225 second Exam</strong></p>
+<p><strong>Below is a table of total of infected counts from a series of FMD outbreaks in cattle</strong></p>
 <p><span class="math display">\[
 \begin{array}{|c|c|c|c|c|c|c|}
 \hline
-83 &amp; 72 &amp; 67 &amp; 55 &amp; 53 &amp; 79 &amp; 91 &amp; 60 &amp; 81 &amp; 84 \\
+192 &amp; 152 &amp; 90 &amp; 124 &amp; 178 &amp; 180 &amp; 127 &amp; 182 &amp; 196 &amp; 118 \\
 \hline
 \end{array}
 \]</span></p>
@@ -3648,17 +3648,17 @@ window.Quarto = {
 \hline
 \text{Min} &amp; \text{Q}_1 &amp; \text{Median} &amp; \text{Q}_3 &amp; \text{Max} \\
 \hline
-53 &amp; 60 &amp; 75.5 &amp; 83 &amp; 91\\
+90 &amp; 124 &amp; 165 &amp; 182 &amp; 196\\
 \hline
 \end{array}
 \]</span></p>
 <p><br></p>
-<p><strong>How does a new value of 86 compare to the exam scores?</strong></p>
+<p><strong>A new outbreak occurs with 190 getting sick. How does that compare to our original data?</strong></p>
 <p><br></p>
-<p><span class="math inline">\(Q_3 &lt; 89 &lt; Max \Rightarrow 86\)</span> is greater than <span class="math inline">\(75\%\)</span> of the exam scores but is not the largest</p>
+<p><span class="math inline">\(Q_3 &lt; 190 &lt; Max \Rightarrow 190\)</span> is greater than <span class="math inline">\(75\%\)</span> of the outbreaks but is not the largest</p>
 <p><br></p>
-<p><strong>What about 74?</strong></p>
-<p><span class="math inline">\(Q_1 &lt; 74 &lt; Median \Rightarrow 74\)</span> is greater than <span class="math inline">\(25\%\)</span> of the exam scores, but less than half of the exams</p>
+<p><strong>What about an outbreak of 128?</strong></p>
+<p><span class="math inline">\(Q_1 &lt; 128 &lt; Median \Rightarrow 128\)</span> is greater than <span class="math inline">\(25\%\)</span> of the outbreaks, but less than of the others</p>
 <p><br></p>
 <p><br></p>
 <hr>
@@ -3728,30 +3728,30 @@ window.Quarto = {
 </div>
 </div>
 <p><br></p>
-<p><strong>Recall our five-number summary of the exam data:</strong></p>
+<p><strong>Recall our five-number summary of the FMD data:</strong></p>
 <p><br></p>
 <p><span class="math display">\[
 \begin{array}{|c|c|c|c|c|c|c|}
 \hline
 \text{Min} &amp; \text{Q}_1 &amp; \text{Median} &amp; \text{Q}_3 &amp; \text{Max} \\
 \hline
-53 &amp; 60 &amp; 75.5 &amp; 83 &amp; 91\\
+90 &amp; 124 &amp; 165 &amp; 182 &amp; 196\\
 \hline
 \end{array}
 \]</span></p>
 <p><br></p>
 <p><strong>The IQR for the dataset is:</strong></p>
-<p><span class="math display">\[\text{IQR} = \text{Q}_3 - \text{Q}_1 = 83 - 60 = 23\]</span></p>
+<p><span class="math display">\[\text{IQR} = \text{Q}_3 - \text{Q}_1 = 182 - 124 = 58\]</span></p>
 <p><br></p>
 <ul>
 <li>Defining the <strong>outlier boundaries</strong>:</li>
 </ul>
 <p><br></p>
-<p><span class="math display">\[\text{Q}_3 + 1.5*\text{IQR} = 83 + (1.5*23)=115.5\]</span></p>
+<p><span class="math display">\[\text{Q}_3 + 1.5*\text{IQR} = 182 + (1.5*58)=269\]</span></p>
 <p><br></p>
-<p><span class="math display">\[\text{Q}_1 - 1.5*\text{IQR} = 60-(1.5*23)=25.5\]</span></p>
+<p><span class="math display">\[\text{Q}_1 - 1.5*\text{IQR} = 124-(1.5*58)=37\]</span></p>
 <p><br></p>
-<p>Any value in the dataset <span class="math inline">\(&gt;115.5\)</span> or <span class="math inline">\(&lt;25.5\)</span> is an <strong>outlier</strong></p>
+<p>Any value in the dataset <span class="math inline">\(&gt;269\)</span> or <span class="math inline">\(&lt;37\)</span> is an <strong>outlier</strong></p>
 <p><br></p>
 <p><br></p>
 <hr>
