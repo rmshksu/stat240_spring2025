@@ -4,6 +4,7 @@ title: Week 3 - Correlation, Observation, and Regression
 
 Feb 03
 : [Boxplots and Scatterplots](https://rmshksu.github.io/stat240_spring2025/classes/d06-240-spr25.html)
+: [**Homework 1 Solutions**](#) {: .label .label-red }
 
 Feb 05
 : [Observational Studies](https://rmshksu.github.io/stat240_spring2025/classes/d07-240-spr25.html)
