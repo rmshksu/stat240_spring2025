@@ -18,3 +18,5 @@ Feb 12
 Feb 14
 : [Assumptions](https://rmshksu.github.io/stat240_spring2025/classes/d10-240-spr25.html)
 : [Homework 2 Solutions](https://rmshksu.github.io/stat240_spring2025/homework/hw2_solutions_240_spr25.html)
+  : [HW2 Student example 1](https://rmshksu.github.io/stat240_spring2025/homework/hw2_student_ex1.pdf)
+  : [HW2 Student example 2](https://rmshksu.github.io/stat240_spring2025/homework/hw2_student_ex2.pdf)
