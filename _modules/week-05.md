@@ -10,6 +10,8 @@ Feb 17
 
 Feb 19
 : Remediation Day
+  : [Graphics Practice](https://rmshksu.github.io/stat240_spring2025/assets/files/ch2practqs.pdf)
+  : [Regression Practice](https://rmshksu.github.io/stat240_spring2025/assets/files/ch4practqs.pdf)
 
 Feb 21
 : Exam 1 GOOD LUCK!
