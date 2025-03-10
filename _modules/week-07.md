@@ -11,4 +11,4 @@ Mar 05
 
 Mar 07
 : [The Normal Distribution II](https://rmshksu.github.io/stat240_spring2025/classes/d16-240-spr25.html)
-: [Homework 3](#)
+: [Homework 3](https://rmshksu.github.io/stat240_spring2025/assets/files/hw3-240.pdf)
