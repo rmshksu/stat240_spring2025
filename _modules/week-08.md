@@ -10,4 +10,5 @@ Mar 12
 
 Mar 14
 : [Bonus Material]()
-: [Homework 3 Due](#)
+: [](#) 
+  : **Homework 3 due 11:59 pm**{: .label .label-red }
