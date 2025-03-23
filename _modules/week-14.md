@@ -10,3 +10,5 @@ Apr 23
 
 Apr 25
 : [Final Review](#)
+: [](#) 
+  : **Quiz 3 due 11:59 pm**{: .label .label-red }
