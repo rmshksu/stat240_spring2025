@@ -2,13 +2,13 @@
 title: Week 11 - Exam 2 
 ---
 
-Mar 24
+Mar 31
 : [Exam 2 Review](#)
 : [](#) 
   : **Homework 4 due 11:59 pm**{: .label .label-red }
 
-Mar 26
+Apr 2
 : [Exam 2 Review](#)
 
-Mar 28
+Apr 4
 : Exam 2 - GOOD LUCK
