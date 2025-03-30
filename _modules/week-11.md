@@ -8,7 +8,7 @@ Mar 31
   : **Homework 4 due 11:59 pm**{: .label .label-red }
 
 Apr 2
-: [Exam 2 Review](#)
+: [Exam 2 Review](https://rmshksu.github.io/stat240_spring2025/classes/240-pract-exam2.pdf)
 
 Apr 4
 : Exam 2 - GOOD LUCK
