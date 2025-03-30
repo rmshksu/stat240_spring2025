@@ -3,7 +3,7 @@ title: Week 11 - Exam 2
 ---
 
 Mar 31
-: [Exam 2 Review](#)
+: [Exam 2 Review](https://rmshksu.github.io/stat240_spring2025/classes/Ex2Review.pdf)
 : [](#) 
   : **Homework 4 due 11:59 pm**{: .label .label-red }
 
