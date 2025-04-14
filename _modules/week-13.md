@@ -3,7 +3,7 @@ title: Week 13 - Hypothesis Testing Continued
 ---
 
 Apr 14
-: [Hypothesis Testing II](https://rmshksu.github.io/stat240_spring2025/classes/d25-240-spr25.html)
+: [Hypothesis Testing II](https://rmshksu.github.io/stat240_spring2025/classes/d24-240-spr25.html)
 : [](#) 
   : **Homework 5 released**{: .label .label-red }
 
