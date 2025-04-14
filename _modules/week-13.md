@@ -11,4 +11,4 @@ Apr 16
 Apr 18
 : [Unit 3 Review](#)
 : [](#) 
-  : **Homework 5 due 11:59 pm**{: .label .label-red }
+  : **Homework 5 released**{: .label .label-red }
