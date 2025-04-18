@@ -17,4 +17,4 @@ Apr 16
 : [Inference Practice 4](https://rmshksu.github.io/stat240_spring2025/assets/files/ch14pq4.pdf)
 
 Apr 18
-: [Unit 3 Review](#)
+: [Unit 3 Review](https://rmshksu.github.io/stat240_spring2025/assets/files/Unit_3_Review.pdf)
