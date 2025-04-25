@@ -8,7 +8,7 @@ Apr 21
   : **Homework 5 due 11:59 pm**{: .label .label-red }
 
 Apr 23
-: [Unit 2](https://rmshksu.github.io/stat240_spring2025/assets/files/Unit_1.pdf)
+: [Unit 2](https://rmshksu.github.io/stat240_spring2025/assets/files/Unit_2.pdf)
 : [](#) 
   : **Quiz 3 released pm**{: .label .label-red }
 
