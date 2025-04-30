@@ -9,4 +9,4 @@ Apr 30
 : [Office Hours](#)
 
 May 2
-: [Tentative Final Release Date](#)
+: [Final is Released](#)
