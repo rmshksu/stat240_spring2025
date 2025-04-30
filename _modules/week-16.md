@@ -2,8 +2,8 @@
 title: Week 16 - Finals Week
 ---
 
-May 6
-: [Tentative Final Due Date](#)
+May 7
+: [Final is Due](#)
 
 May 8
 : [TEVAL Submission Deadline](#)
